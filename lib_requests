@@ -1,0 +1,22 @@
+La librería requests es una librería de Python que se utiliza para realizar solicitudes HTTP. Es muy popular y fácil de usar, y puede ser útil para hacer pruebas rápidas o automatizar tareas.
+url  "www..."
+res = requests.get(url) // hacer peticion get con un variable res
+dir(res)                // los atributos disponibles
+res.status_code         // atributo para ver el estado del codigo
+res.reason              // descripcion del codigo anterior
+res.request             // devuelve un ocjeto con el tipo de peticion
+dir(res.request)        // los atributos del objeto con 
+res.rrequest.url        // la url a la que hemos hcho la peticion
+res.rrequest.path_url   // al path del cual queresmo acceder
+res.cookies             //  devueve un objeto de los cookes
+res.headers             // devleve las cabecera de la respuesta
+re.ok                   // false o true si es o no es un arepuesta sacticfacoria
+re.histry               // una redirecion
+re.content              // cupero de la respuesta en bytes
+res.text                // body en texto en str
+res.json                // body en ofrmato json
+
+with open("codigo 503.html", "w", encoding="utf-8") as f:
+	f.write(rest.text)
+	
+
