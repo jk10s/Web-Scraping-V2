@@ -1,0 +1,7 @@
+driver.findElement(By.id("email")) /// identificados por id
+driver.findElement(By.Name("email")) /// identificados por name
+
+driver.findElement(By.TagName("email")) /// identificados por nombre de la etiqueta eje div- input el primero que lo encuntre
+driver.findElement(By.ClassName("email")) /// identificados por classname class css
+
+
