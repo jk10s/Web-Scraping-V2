@@ -3,5 +3,7 @@ driver.findElement(By.Name("email")) /// identificados por name
 
 driver.findElement(By.TagName("email")) /// identificados por nombre de la etiqueta eje div- input el primero que lo encuntre
 driver.findElement(By.ClassName("email")) /// identificados por classname class css
+driver.findElement(By.LinkText("email")) /// identificados por link de text textos en en la etiqueta 
+driver.find_element(By.PARTIAL_LINK_TEXT, 'jugar').click() // identificador por cualquier palabr dentro del tet
 
 
