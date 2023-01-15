@@ -1,0 +1,10 @@
+soup = beatifulSoup(driver.page_source, "html.parser")   // asigna una varible que contiene el codigo de la pagina 
+soup.find("del", class_="original-price-nodiscount").text // precio del producto
+soup.find("div", class_="articulo").txt // nombre d prooduct identifica elemento con inspetor
+soup.find(id="precio-main).txt // preciio actual el valor de ese id
+url_img = "https" + soup.find("img", class_="pc-com-zooom).attrs.get ("rc")
+categoria= soup.find("div", class_="navegation-secundaria_migas-de-pan").find_all("a", class_="GTM-bread
+
+id_producto= soup.fin(id="codigo-articulo-pc").txt
+print"cadauno",varible
+
