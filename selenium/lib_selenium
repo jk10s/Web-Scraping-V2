@@ -7,3 +7,53 @@ driver.findElement(By.LinkText("email")) /// identificados por link de text text
 driver.find_element(By.PARTIAL_LINK_TEXT, 'jugar').click() // identificador por cualquier palabr dentro del tet
 
 
+______________________________________________________________________________
+Argumentos
+
+--webdriver-loglevel: Este argumento establece el nivel de detalle en los registros de Selenium WebDriver. Los valores válidos incluyen "TRACE", "DEBUG", "INFO", "WARNING" y "ERROR".
+
+--webdriver-logfile: Este argumento especifica la ruta de un archivo de registro en el que se escribirán los registros de Selenium WebDriver.
+
+--webdriver-port: Este argumento establece el puerto en el que escuchará Selenium WebDriver. El valor predeterminado es 4444.
+
+--webdriver-url: Este argumento especifica la URL base a la que se conecta Selenium WebDriver. El valor predeterminado es "http://localhost:4444/wd/hub".
+
+--webdriver-chrome-driver: Este argumento especifica la ruta al ejecutable del controlador de Chrome.
+
+--webdriver-firefox-profile: Este argumento especifica la ruta al perfil de Firefox que se utilizará.
+
+--webdriver-ie-driver: Este argumento especifica la ruta al ejecutable del controlador de Internet Explorer.
+
+--webdriver-opera-driver: Este argumento especifica la ruta al ejecutable del controlador de Opera.
+
+--webdriver-safari-driver: Este argumento especifica la ruta al ejecutable del controlador de Safari.
+--webdriver-start-maximized: Este argumento indica a Selenium WebDriver que inicie el navegador maximizado.
+
+--webdriver-start-fullscreen: Este argumento indica a Selenium WebDriver que inicie el navegador en pantalla completa.
+
+--webdriver-remote-quiet: Este argumento desactiva los mensajes de depuración de Selenium WebDriver cuando se conecta a un servidor remoto.
+
+--webdriver-remote-verbose: Este argumento habilita los mensajes de depuración de Selenium WebDriver cuando se conecta a un servidor remoto.
+
+--webdriver-remote-url: Este argumento especifica la URL del servidor remoto al que se conecta Selenium WebDriver.
+
+--webdriver-no-proxy: Este argumento desactiva la configuración de proxy para Selenium WebDriver.
+
+--webdriver-proxy-type: Este argumento especifica el tipo de proxy que se utilizará con Selenium WebDriver. Los valores válidos incluyen "http", "socks5" y "pac".
+
+--webdriver-proxy-http: Este argumento especifica la dirección IP y el puerto del proxy HTTP que se utilizará con Selenium WebDriver.
+
+--webdriver-proxy-socks: Este argumento especifica la dirección IP y el puerto del proxy SOCKS que se utilizará con Selenium WebDriver.
+
+--webdriver-proxy-autoconfig: Este argumento especifica la URL del archivo de configuración del proxy automático (PAC) que se utilizará con Selenium WebDriver.
+
+
+APLICANDO ARGUMENTOS EJEMPLO
+********************************************************************
+from selenium import webdriver
+options = webdriver.ChromeOptions()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(chrome_options=options)
+driver.get("https://www.example.com")
+********************************************************************
+
