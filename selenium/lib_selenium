@@ -57,3 +57,10 @@ driver = webdriver.Chrome(chrome_options=options)
 driver.get("https://www.example.com")
 ********************************************************************
 
+COMPROBAR QUE USA SELENIUM
+_______________________________
+
+entrar al inspector en la cosnola y escribir 
+navigator.webdriver
+si es true lo usa 
+si el falso nolo usa 
