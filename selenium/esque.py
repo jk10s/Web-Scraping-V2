@@ -15,10 +15,12 @@ def drivere():
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     expot=[
         "enable-automation",
-        "ignore-certificate-error","enable-logging"
+        "ignore-certificate-error",
+        "enable-logging"
     ]
     chrome_options.add_experimental_option("excludeSwitches", expot)
     driver = webdriver.Chrome(chrome_options=chrome_options)
+    
     return driver
 
 if __name__=='__main__':
