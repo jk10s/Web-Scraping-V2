@@ -106,10 +106,13 @@ def descargarft(hashtag, minimo):
         # elemento = driver.find_element(By.CSS_SELECTOR, "div._aagu")
         elementos = driver.find_elements(By.CSS_SELECTOR, "div._aagu")
         for elemento in elementos:
-            url = elemento.find_element(By.CSS_SELECTOR, "img").get_attribute("src")
-            url_fotos.add(url)
-            print(f' Total de fotos: {len(url_fotos)}')
-            cursor_arriba()
+            try:
+                url = elemento.find_element(By.CSS_SELECTOR, "img").get_attribute("src")
+                url_fotos.add(url)
+            except:
+                pass
+        print(f' Total de fotos: {len(url_fotos)}')
+        cursor_arriba()
         
    
 
