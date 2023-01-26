@@ -9,6 +9,7 @@ import sys
 import os
 import pickle #para crear y cuardar ls cookies
 from crede import *
+import wget # para descargar archivos
 
 
 def drivere():
@@ -114,7 +115,9 @@ def descargarft(hashtag, minimo):
         print(f' Total de fotos: {len(url_fotos)}')
         cursor_arriba()
         
-   
+    #crear unacarpeta
+    if not os.path.exists(hashtag):
+        os.mkdir(hashtag)
 
 if __name__=='__main__':
     modo_de_uso = f'modo de uso:\n'
