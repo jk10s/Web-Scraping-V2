@@ -9,7 +9,7 @@ import sys
 import os
 import pickle #para crear y cuardar ls cookies
 from crede import *
-import wget # para descargar archivos
+import wget # para descargar archivos desde internet
 
 
 def drivere():
