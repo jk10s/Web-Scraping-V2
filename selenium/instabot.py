@@ -118,6 +118,16 @@ def descargarft(hashtag, minimo):
     #crear unacarpeta
     if not os.path.exists(hashtag):
         os.mkdir(hashtag)
+    #descargar las imahenes del conjunto
+    n=0
+    for url_foto in url_fotos:
+        n+=1
+        print(f' Decargando {n} de {len(url_fotos)}')
+        nombre_archivo=wget.download(url_foto, hashtag)
+        cursor_arriba()
+        print(f'\33[K descaargando {nombre_archivo}')
+        print()
+    return len(url_fotos)
 
 if __name__=='__main__':
     modo_de_uso = f'modo de uso:\n'
@@ -148,7 +158,9 @@ if __name__=='__main__':
         input("pulsa ENTER oara salir...")
         driver.quit()
         sys.exit(1)
+    raya()
     descargarft(HASHTAG,MINIMO)
+    print(f'se has descargado {res} fotos')
         
     input("pulsa enter para salir")
     # driver.quit()
